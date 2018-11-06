@@ -1,11 +1,12 @@
 import React from 'react'
 
-const CocktailDisplay = (props) => {
+const CocktailDisplay = ({cocktails, match}) => {
+  const currentCocktail = cocktails[match.params.cocktailId]
   return (
     <div id="cocktail-display">
-      <h1>{/* Cocktail Name */}</h1>
-      <h3>{/* Cocktail Description */}</h3>
-      <p>{/* Cocktail Instructions */}</p>
+      <h1>{currentCocktail.name}</h1>
+      <h3>{currentCocktail.description}</h3>
+      <p>{currentCocktail.instructions}</p>
     </div>
   )
 }

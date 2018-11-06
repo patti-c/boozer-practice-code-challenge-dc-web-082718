@@ -9,6 +9,11 @@ input {
   width: 200px;
 }
 
+#cocktail-list {
+  height: 100vh;
+  overflow: scroll;
+}
+
 button {
   height: 30px;
   width: 30px;
