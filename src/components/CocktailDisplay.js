@@ -1,7 +1,7 @@
 import React from 'react'
 
 const CocktailDisplay = ({cocktails, match}) => {
-  const currentCocktail = cocktails[match.params.cocktailId]
+  const currentCocktail = cocktails[match.params.cocktailId - 1]
   return (
     <div id="cocktail-display">
       <h1>{currentCocktail.name}</h1>

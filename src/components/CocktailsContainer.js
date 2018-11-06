@@ -36,7 +36,6 @@ class CocktailsContainer extends Component {
             render={routerProps => <CocktailDisplay {...routerProps} cocktails={this.state.allCocktails}/>}
           /> : null
         }
-
         <Form />
       </div>
     )
